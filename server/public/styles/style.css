@@ -1,0 +1,7 @@
+.index-point {
+    display: none;
+}
+
+.index-point-active {
+    display: block;
+}
