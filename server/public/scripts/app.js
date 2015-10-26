@@ -50,17 +50,20 @@ function prevSlide(){
 }
 
 function createNavButtons($el){
-    $("#navButtons").append("<div id='prev' class='nav-button'>Prev</div>");
-    $("#navButtons").append("<div id='next' class='nav-button'>Next</div>");
+    //$("#navButtons").append("<div id='prev' class='nav-button'>Prev</div>");
+    //$("#navButtons").append("<div id='next' class='nav-button'>Next</div>");
+    $("#navButtons").append("<button id='prev' type='button' class='btn btn-default'>Prev</button>");
+    $("#navButtons").append("<button id='next' type='button' class='btn btn-default'>Next</button>");
+
 }
 
 function createIndexPoints(array, $el){
     for(var i = 0; i < array.length; i++){
         $el.append(
             "<div class='index-point' id='index" + i + "'>" +
-              "<p>" + zetaGitInfo[i].name + "</p>" +
-              "<p>" + zetaGitInfo[i].github + "</p>" +
-              "<p>" + zetaGitInfo[i].shoutout + "</p>" +
+              "<h1>" + zetaGitInfo[i].name + "</h1>" +
+              "<h4>" + zetaGitInfo[i].github + "</h4>" +
+              "<h5>" + zetaGitInfo[i].shoutout + "</h5>" +
             "</div>"
         )
     }
