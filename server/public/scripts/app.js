@@ -50,22 +50,28 @@ function prevSlide(){
 }
 
 function createNavButtons($el){
-    $el.append("<div id='prev' class='nav-button'>Prev</div>");
+    $("#navButtons").append("<div id='prev' class='nav-button'>Prev</div>");
+    $("#navButtons").append("<div id='next' class='nav-button'>Next</div>");
 }
 
 function createIndexPoints(array, $el){
     for(var i = 0; i < array.length; i++){
-        $el.append("<div class='index-point' id='index" + i + "'>" + zetaGitInfo[i].name + "</div>")
+        $el.append(
+            "<div class='index-point' id='index" + i + "'>" +
+              "<p>" + zetaGitInfo[i].name + "</p>" +
+              "<p>" + zetaGitInfo[i].github + "</p>" +
+              "<p>" + zetaGitInfo[i].shoutout + "</p>" +
+            "</div>"
+        )
     }
-    $el.append("<div id='next' class='nav-button'>Next</div>");
 }
 
 function updateIndexPoints(){
     for(var i = 0; i < zetaGitInfo.length; i++){
-        $("#index" + i).removeClass("index-point-active");
+        $("#index" + i).fadeOut("slow");
 
         if(i == indexTracker){
-            $("#index" + i).addClass("index-point-active");
+            $("#index" + i).fadeIn("slow");
         }
     }
 }

@@ -1,7 +1,22 @@
+.class {
+    position: relative;
+}
+
 .index-point {
     display: none;
+    position: absolute;
+    top: 0;
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .index-point-active {
     display: block;
 }
+
+.nav-button {
+    display: inline;
+}
+
+
