@@ -18,9 +18,18 @@ $(document).ready(function(){
             $("#next").on('click', nextSlide);
             $("#prev").on('click', prevSlide);
             updateMain();
+            timer();
         }
     });
 });
+
+function timer() {
+    setInterval(
+        function(){
+            nextSlide();
+        }, 10000
+    );
+}
 
 function createCarousel(array) {
     $("#container").append("<div class='main'></div>");
