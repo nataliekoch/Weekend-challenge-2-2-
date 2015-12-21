@@ -1,0 +1,106 @@
+{
+  "people": [
+    {
+      "name": "Paul Sotherland",
+      "location": "Saint Paul",
+      "animal" : "Turtle",
+      "animalImage" : "../images/shuckle.gif"
+    },
+    {
+      "name": "Mark Rothermal",
+      "location": "Champlin",
+      "animal": "Turtle",
+      "animalImage" : "../images/torterra.gif"
+    },{
+      "name": "Scott",
+      "location": "Apple Valley",
+      "animal": "Dog",
+      "animalImage" : "../images/herdier.gif"
+    },{
+      "name":"Altamir Coelho",
+      "location":"Minneapolis",
+      "animal":"Lion",
+      "animalImage" : "./images/Pyroar.gif"
+    },{
+      "name":"Zach Hintgen",
+      "location":"Waconia",
+      "animal":"Rabbit",
+      "animalImage" : "./images/bunnelby.gif"
+    },{
+      "name":"Sam Musselman",
+      "location":"Richfield",
+      "animal":"Black Bear",
+      "animalImage" : "./images/ursaring.gif"
+    },{
+      "name":"Brooks Nagel",
+      "location":"Minneapolis",
+      "animal":"Puma",
+      "animalImage" : "./images/persian.gif"
+    },{
+      "name":"Eric Anderson",
+      "location":"Minneapolis",
+      "animal":"Owl",
+      "animalImage" : "./images/Noctowl.gif"
+    },{
+      "name":"Nathan",
+      "location":"Edina",
+      "animal":"Polar Bear",
+      "animalImage" : "./images/beartic.gif"
+    },{
+      "name":"Amber",
+      "location":"Plymouth",
+      "animal":"Owl",
+      "animalImage" : "./images/hoothoot.gif"
+    },{
+      "name":"Liz",
+      "location":"Bloomington",
+      "animal":"Wookie",
+      "animalImage" : "./images/piloswine.gif"
+    },{
+      "name":"Matthew Reinders",
+      "location":"Bloomington",
+      "animal":"Thomson gazelle",
+      "animalImage" : "./images/Virizion.gif"
+    },{
+      "name":"Chris Graff",
+      "location":"Minneapolis",
+      "animal":"Moose",
+      "animalImage" : "./images/stantler.gif"
+    },{
+      "name":"Jeremy Cloutier",
+      "location":"Minneapolis",
+      "animal":"Phoenix",
+      "animalImage" : "./images/moltres.gif"
+    },{
+      "name":"Joseph Anderson",
+      "location":"Minneapolis",
+      "animal":"Dolphin",
+      "animalImage" : "./images/Gorebyss.gif"
+    },{
+      "name":"Scott Bromander",
+      "location":"Narnia",
+      "animal":"Aye-aye",
+      "animalImage" : "./images/Swoobat.gif"
+    },{
+      "name":"Kenzie Bultema",
+      "location":"Inver Grove Heights",
+      "animal":"Snow Leopard",
+      "animalImage" : "./images/Purrloin.gif"
+    },{
+      "name":"Natalie Koch",
+      "location":"Minneapolis",
+      "animal":"Kittyfoofoo",
+      "animalImage" : "./images/luxray.gif"
+    },{
+      "name":"Anthony Rohr",
+      "location":"Minneapolis",
+      "animal":"Otter",
+      "animalImage" : "./images/dewott.gif"
+    }, {
+      "name": "Kristy Wessel",
+      "location": "Burnsville",
+      "animal": "Clumsy Cat",
+      "animalImage" : "./images/skitty.gif"
+    }
+  ]
+}

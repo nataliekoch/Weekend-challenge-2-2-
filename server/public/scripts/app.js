@@ -1,17 +1,16 @@
-var zetaGitInfo;
+var thetaGitInfo;
 
 var indexTracker = 0;
 
 $(document).ready(function(){
     $.ajax({
         type: "GET",
-        url: "../data/zeta.json",
+        url: "../data/theta.json",
         success: function(data){
             //store data into variable zetaGitInfo
-            zetaGitInfo = data.zeta;
-            console.log(zetaGitInfo);
+            thetaGitInfo = data.people;
             //create carousel
-            createCarousel(zetaGitInfo);
+            createCarousel(thetaGitInfo);
 
             updateIndexPoints();
 
@@ -40,7 +39,7 @@ function createCarousel(array) {
 
 function nextSlide(){
     indexTracker++;
-    if(indexTracker >= zetaGitInfo.length){
+    if(indexTracker >= thetaGitInfo.length){
         indexTracker = 0;
     }
 
@@ -51,7 +50,7 @@ function nextSlide(){
 function prevSlide(){
     indexTracker--;
     if(indexTracker < 0){
-        indexTracker = zetaGitInfo.length - 1;
+        indexTracker = thetaGitInfo.length - 1;
     }
 
     updateMain();
@@ -70,24 +69,25 @@ function createIndexPoints(array, $el){
     for(var i = 0; i < array.length; i++){
         $el.append(
             "<div class='index-point' id='index" + i + "'>" +
-              "<h1>" + zetaGitInfo[i].name + "</h1>" +
-              "<h4>" + zetaGitInfo[i].github + "</h4>" +
-              "<h5>" + zetaGitInfo[i].shoutout + "</h5>" +
+              "<h1>" + thetaGitInfo[i].name + "</h1>" +
+              "<h3>" + thetaGitInfo[i].location + "</h3>" +
+              "<h3>" + thetaGitInfo[i].animal + "</h3>" +
+              "<img src='" + thetaGitInfo[i].animalImage + "' height='15%' width='15%'>" +
             "</div>"
         )
     }
 }
 
 function updateIndexPoints(){
-    for(var i = 0; i < zetaGitInfo.length; i++){
-        $("#index" + i).fadeOut("slow");
+    for(var i = 0; i < thetaGitInfo.length; i++){
+        $("#index" + i).stop(true, true).fadeOut("fast");
 
         if(i == indexTracker){
-            $("#index" + i).fadeIn("slow");
+            $("#index" + i).stop(true, true).fadeIn("slow");
         }
     }
 }
 
 function updateMain(){
-    $("#mainContent").text(zetaGitInfo[indexTracker]);
+    $("#mainContent").text(thetaGitInfo[indexTracker]);
 }
